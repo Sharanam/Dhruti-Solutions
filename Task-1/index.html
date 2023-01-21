@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhruti Template</title>
+  </head>
+  <body>
+    <!-- https://www.figma.com/community/file/1191370831759274444 -->
+
+    <div class="container-1">
+      <!-- 1 -->
+      <div class="wrapper">
+        <div class="on-right content">
+          <h2>A truly wonderful experience</h2>
+          <p>
+            Brilliant for anyone looking to get away from the hustle and bustle
+            of city life or detox from their tech for a few days. I could have
+            stayed another week!
+          </p>
+          <p>
+            They really have thought about everything here down to the finest
+            details.
+          </p>
+          <div class="mt-2">
+            <div class="stars d-inline mr-1">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <span> 01 Jan 2023 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="big-container">
+      <div class="container-2">
+        <div class="wrapper c-2">
+          <div class="on-left content">
+            <h2>Nourish the mind, body, and spirit</h2>
+            <p class="mt-2">
+              Many people fnd that the combination of being in a peaceful
+              natural setting and engaging in activities that nourish the mind,
+              body, and spirit leaves them feeling rejuvenated and refreshed.
+            </p>
+            <button class="mt-1">Find available cabins</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .wrapper {
+      max-width: min(80vw, 800px);
+      margin: 0 auto;
+    }
+    .container-1 {
+      padding: 1rem;
+      height: min(100vh, 36rem);
+      /* remove this gradient unless it needed */
+      background: linear-gradient(
+          to right,
+          rgba(10, 10, 10, 0.6) 0%,
+          rgba(10, 10, 10, 0.6) 0%
+        ),
+        url("1.jpg") no-repeat center center/cover;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+    .big-container {
+      padding: 3rem;
+      height: min(100vh, 36rem);
+      background-color: rgb(194, 221, 231);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container-2 {
+      padding: 1rem;
+      height: min(100vh, 36rem);
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 30%,
+          rgba(0, 0, 0, 0.6) 60%
+        ),
+        url("2.jpg") no-repeat center center/cover;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .on-right {
+      width: min(80%, 25rem);
+      margin-left: auto;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .on-left {
+      width: min(80%, 35rem);
+      margin-right: auto;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      padding: 1rem;
+      color: white;
+    }
+    .content > h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    .content > p,
+    .content span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .content > * {
+      margin-bottom: 1rem;
+    }
+    .content > button {
+      background-color: rgb(172, 150, 53);
+      border-radius: 0.5rem;
+      padding: 1rem 1.5rem;
+      border: none;
+      width: max-content;
+    }
+    .d-inline {
+      display: inline-block;
+    }
+    .mr-1 {
+      margin-right: 1rem;
+    }
+    .mt-2 {
+      margin-top: 2rem;
+    }
+    .mt-1 {
+      margin-top: 1rem;
+    }
+    .stars > span {
+      background-color: rgb(81, 139, 81);
+      padding: 0.2rem;
+    }
+
+    @media screen and (max-width: 425px) {
+      .container {
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 100%;
+      }
+      .on-right {
+        width: 100%;
+        margin-left: 0;
+      }
+      .content {
+        padding: 1rem;
+      }
+      .on-left {
+        width: 100%;
+        margin-right: 0;
+      }
+      .big-container {
+        padding: 0.2rem;
+      }
+    }
+  </style>
+</html>
