@@ -1,0 +1,80 @@
+{
+    "india": [
+        {
+            "date": "02-01-2020",
+            "confirmed": 12,
+            "deaths": 12,
+            "recovered": 12
+        },
+        {
+            "date": "03-01-2020",
+            "confirmed": 13,
+            "deaths": 13,
+            "recovered": 13
+        },
+        {
+            "date": "04-01-2020",
+            "confirmed": 14,
+            "deaths": 14,
+            "recovered": 14
+        },
+        {
+            "date": "05-01-2020",
+            "confirmed": 15,
+            "deaths": 15,
+            "recovered": 15
+        }
+    ],
+    "usa": [
+        {
+            "date": "06-01-2020",
+            "confirmed": 16,
+            "deaths": 16,
+            "recovered": 16
+        },
+        {
+            "date": "07-01-2020",
+            "confirmed": 17,
+            "deaths": 17,
+            "recovered": 17
+        },
+        {
+            "date": "08-01-2020",
+            "confirmed": 18,
+            "deaths": 18,
+            "recovered": 18
+        },
+        {
+            "date": "09-01-2020",
+            "confirmed": 19,
+            "deaths": 19,
+            "recovered": 19
+        }
+    ],
+    "china": [
+        {
+            "date": "10-01-2020",
+            "confirmed": 20,
+            "deaths": 20,
+            "recovered": 20
+        },
+        {
+            "date": "11-01-2020",
+            "confirmed": 21,
+            "deaths": 21,
+            "recovered": 21
+        },
+        {
+            "date": "12-01-2020",
+            "confirmed": 22,
+            "deaths": 22,
+            "recovered": 22
+        },
+        {
+            "date": "13-01-2020",
+            "confirmed": 23,
+            "deaths": 23,
+            "recovered": 23
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covid report</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <style>
+
+  </style>
+</head>
+
+<body class="bg-dark text-light">
+  <div class="container mt-5">
+    <div class="row mt-5">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 class="text-center mt-5">Covid Report</h1>
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center align-items-center
+            gap-2 mt-5 flex-wrap
+            ">
+            <div class="d-flex flex-row  flex-wrap justify-content-center">
+              <select class="form-select-sm form-control-sm m-2" id="country" name="country">
+              </select>
+              <select class="form-select-sm m-2" id="year" name="country">
+              </select>
+            </div>
+            <div class="d-flex flex-row  flex-wrap justify-content-center">
+              <div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="toggleConfirm" onClick="toggle('confirm')">Greater Than</span>
+                  </div>
+                  <input type="text" class="form-control-sm me-2 rounded-0 border-success"
+                    placeholder=" Confirm Cases" id="inpConfirm" min="0">
+                </div>
+              </div>
+              <!-- <input type="text" class="form-control-sm me-2 rounded-0 border-success"
+                placeholder=" Recovered Cases" id="inpRecovered">
+              <input type="text" class="form-control-sm me-2 rounded-0 border-success"
+                placeholder=" Death Cases" id="inpDeath"> -->
+              <div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="toggleRecovered" onClick="toggle('recovered')">Greater
+                      Than</span>
+                  </div>
+                  <input type="text" class="form-control-sm me-2 rounded-0 border-success"
+                    placeholder=" Recovered Cases" id="inpRecovered" min="0">
+                </div>
+              </div>
+              <div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="toggleDeath" onClick="toggle('death')">Greater Than</span>
+                  </div>
+                  <input type="text" class="form-control-sm me-2 rounded-0 border-success"
+                    placeholder=" Death Cases" id="inpDeath" min="0">
+                </div>
+              </div>
+
+            </div>
+            <div>
+              <button class="btn btn-danger rounded-0" id="subBtn"> SUBMIT </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table class="table table-dark text-light table-borderless container w-75 mt-5 table-striped table-responsive">
+        <thead>
+          <tr>
+
+            <th scope="col">Date</th>
+            <th scope="col">Confirm</th>
+            <th scope="col">Death</th>
+            <th scope="col">Recovered</th>
+          </tr>
+        </thead>
+        <tbody id="table-data">
+        </tbody>
+      </table>
+      <script src="script.js"></script>
+
+</body>
+
+</html>
