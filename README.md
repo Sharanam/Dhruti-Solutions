@@ -1,0 +1,2 @@
+# Learning Snippets for Kashyap and Dhruti
+This repository is intended to assist Kashyap and Dhruti in their learning process during their job or internship. It contains code snippets written by the creator of the repository to share with them.
